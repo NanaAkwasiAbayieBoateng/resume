@@ -1,0 +1,215 @@
+---
+title: "Nana  Boateng's Resume"
+author: Nana Boateng
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+  
+    css: ['css/resume_styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+
+
+Aside
+================================================================================
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+
+- <i class="fa fa-envelope"></i> unltd148@yahoo.co.uk
+- <i class="fa fa-link"></i> [restanalytics.com/](http://restanalytics.com/)
+- <i class="fa fa-github"></i>[github](https://github.com/NanaAkwasiAbayieBoateng)
+- <i class="fa fa-phone"></i> (901) 246-7618
+- <i class="fa fa-linkedin"></i> [linkedin](https://www.linkedin.com/in/nana-boateng-26b9a226/)
+
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-laptop"></i> **Programming**: Python, R,SQL, Scala, Spark,
+Matlab, SAS,Octave.
+- <i class="fas fa-cloud"></i> **Cloud Computing**: AWS sagemaker, 
+Microsoft Azure, Google cloud, Databricks.
+- <i class="fa fa-laptop"></i> **Other**: Tensorflow/Keras, pyTorch,Scikit-learn,tidyverse, plotly, matplotlib, ggplot2,Stata, Minitab, 
+Tableau, Power BI, Github/Bitbucket, SPSS, Linux/Unix, Docker
+
+
+Credentials
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-drivers-license"></i> SQL and Relational Databases – IBM ,2021
+- <i class="fa fa-drivers-license"></i> Professional Educator License (IL): Docker Essentials – A developer Introduction, IBM, 2020
+- <i class="fa fa-drivers-license"></i> Data Science with Scala - IBM, 2020
+- <i class="fa fa-drivers-license"></i> Certified Base Programmer – SAS
+
+
+
+Main
+================================================================================
+
+Nana Boateng {#title}
+--------------------------------------------------------------------------------
+Nana Boateng is a Data Scientist with professional experience in machine learning, Deep learning, computer vision, natural language processing, optimization techniques, predictive analytics, statistical analysis and spatial data visualization.
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+### University Of Memphis
+
+PhD.
+
+Memphis, TN
+
+2016
+
+Applied Statistics
+
+### University Of Memphis
+M.S.
+
+Memphis, TN
+
+2014
+
+Applied Statistics
+
+### University Of Memphis
+M.A.
+
+Memphis, TN
+
+2017
+
+Economics
+
+
+
+### Middle Tennessee State University
+M.S.
+
+Murfreesboro,TN
+
+2012
+
+Mathematics
+
+
+### Kwame Nkrumah University of Science and Technology
+B.S.
+
+Kumasi, Ghana
+
+2007
+
+Mathematics
+
+
+Professional Experience {data-icon=key}
+--------------------------------------------------------------------------------
+
+### NICE Systems Inc.
+
+Data Scientist
+
+Alpharetta, GA
+
+2019 - To present
+
+
+
+- Build machine learning models for financial fraud detection.
+- Perform analysis to support the deployment of fraud prevention analytical models.
+- Analyze fraud cases obtained from clients.
+- Research data patterns in order to find patterns predictive of fraud.
+- Improve the quality and actual implementation of computational algorithms and tools.
+- Optimize the detection performance of NICE Actimize Fraud products and improve customers’ experience with our Fraud solutions.
+- Define product requirements for analytics and provide feedback to the product team on ways in which product may be improved.
+- Develop and enhance our solution-specific risk scores.
+- Measure the quality of the analytical performance of Fraud Products.
+- Develop tools to support model tuning, performance tracking and automation.
+- Develop custom detection logic for specific clients.
+
+
+
+### Catalina Marketing Corporation
+
+Senior Data Scientist
+
+Atlanta, GA
+
+2018 - 2019
+
+- Built recommender systems for CVC/SharebuildR campaigns with Matrix factorization methods such as ALS and Embedding with tools such as Spark and Keras. Explored Distributed Learning tools such as Elephas, Dist-Keras and Horovod Runner.
+- Built an end –to-end flow model to rank propensity and redemption forecast models with tools such as Scikit-learn, Spark.
+- Build visualizations and dashboard using shiny to display forecast from a revenue management-forecasting model.
+- Mentoring Associate Data Scientist.
+
+
+
+
+### Fiat Chrysler Automobiles
+
+Data Scientist
+
+Auburn-Hills, MI
+
+2017 - 2018
+
+- Pothole and significant events detection with machine learning. Used Machine learning models including MLP, XGBoost and AutoML to detect and to predict pothole size.
+-  Lead manpower requirements project to predict with better accuracy the number of vehicles that would be sent to Chrysler Proving Grounds for vehicle testing. This allowed the manpower team to hire the right number of drivers thereby reducing cost otherwise incurred from hiring more drivers than will be needed.
+- Sentiment Analysis of FCA employee and ex-employee reviews: Scraped and analyzed thousands of employee and ex-employees reviews from Glassdoor and Indeed between 2008 and 2018.
+- Lead on multiple analytical projects using Customer Usage Data (CUDA) and warranty data to drive insights into customer mileage, identify warranty concerns and improve overall durability of FCA vehicles.
+- Lead Trailer Tow project using data from Control Tec database to analyze 95th Percentile trailer towing FCA SUV vehicles.
+- Member of team developing Qlikview interface to various FCA vehicle databases Participated in weekly meetings to analyze various stages of the development Qlikview.
+
+
+### Baptist Memorial Hospital
+
+Data  Analyst/ Manager
+
+Memphis, TN
+
+2016 - 2017
+
+- Responsible for data management that includes data collection and database management for the Thoracic Oncology Multidisciplinary Clinic.
+- Duties include collecting data at conferences and during clinics and reporting to Medical Director, Medical Steering Committee, Administration and various grant-funding organizations as directed.
+- Perform a prospective matched cohort comparative effectiveness study of patients receiving serial versus multidisciplinary care, with key patient-centered endpoints (survival, satisfaction with the care experience, timeliness and appropriateness of care, quality of staging).
+- Perform statistical analysis to determine the quality of care and survival between multidisciplinary program and serial care program using models such as conditional fixed effects logistic regression for binary categorical outcomes; fixed effects generalized linear models and fixed effects proportional hazard model for survival analysis.
+
+
+
+
+
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+
+
+Peer-reviewed Publications {data-icon=flask}
+--------------------------------------------------------------------------------
+
+
+
+
+```{r eval=FALSE, include=FALSE}
+if(PDF_EXPORT){
+  cat("
+  
+Links {data-icon=link}
+--------------------------------------------------------------------------------
+
+<br>
+
+
+")
+  
+  walk2(links, 1:length(links), function(link, index){
+    print(glue('{index}. {link}'))
+  })
+}
+```
+

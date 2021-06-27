@@ -1,0 +1,172 @@
+---
+title: "Nana  Boateng's Resume"
+author: Nana Boateng
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+  
+    css: ['css/resume_styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(glue)
+library(tidyverse)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- TRUE
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R')
+
+# Load csv with position info
+position_data <- read_csv('resume_positions.csv')
+
+```
+
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+
+Aside
+================================================================================
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+
+- <i class="fa fa-envelope"></i> unltd148@yahoo.co.uk
+- <i class="fa fa-link"></i> [restanalytics.com/](http://restanalytics.com/)
+- <i class="fa fa-github"></i>[github](https://github.com/NanaAkwasiAbayieBoateng)
+- <i class="fa fa-phone"></i> (901) 246-7618
+- <i class="fa fa-linkedin"></i> [linkedin](https://www.linkedin.com/in/nana-boateng-26b9a226/)
+
+
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-laptop"></i> **Programming**: Python, R,SQL, Scala, Spark,
+Matlab, SAS,Octave
+- <i class="fa fa-flask"></i> **Cloud Computing**: AWS sagemaker, 
+Microsoft Azure, Google cloud, Databricks,
+- <i class="fa fa-lightbulb-o"></i> **Other**: Tensorflow/Keras, pyTorch,Scikit-learn,tidyverse, plotly, matplotlib, ggplot2,Stata, Minitab, 
+Tableau, Power BI, Github/Bitbucket, SPSS, Linux/Unix, Docker
+
+
+Credentials
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-chart-area"></i> SQL and Relational Databases – IBM ,2021
+- <i class="fa fa-drivers-license"></i> Professional Educator License (IL): Docker Essentials – A developer Introduction, IBM, 2020
+- <i class="fa fa-drivers-license"></i> Data Science with Scala - IBM, 2020
+- <i class="fa fa-drivers-license"></i> Certified Base Programmer – SAS
+
+
+<!-- Disclaimer {#disclaimer} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- Made with the R package [**pagedown**](https://github.com/rstudio/pagedown).  -->
+
+<!-- The source code is available at [github.com/NanaAkwasiAbayieBoateng/cv](https://github.com/NanaAkwasiAbayieBoateng/cv). -->
+
+
+<!-- Last updated on `r Sys.Date()`. -->
+
+
+Main
+================================================================================
+
+Nana Boateng {#title}
+--------------------------------------------------------------------------------
+Nana Boateng is a Data Scientist with professional experience in machine learning, Deep learning, computer vision, natural language processing, optimization techniques, predictive analytics, statistical analysis and spatial data visualization.
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'education')
+```
+
+
+Professional Experience {data-icon=key}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'professional_positions')
+```
+
+
+
+
+<!-- :::aside -->
+
+<!-- Peer-reviewed Publications -->
+<!-- -------------------------------------------------------------------------------- -->
+<!-- - [Splicing modulation sensitizes chronic lymphocytic leukemia cells to venetoclax by remodeling mitochondrial apoptotic dependencies](https://www.ncbi.nlm.nih.gov/pubmed/30282833). Ten Hacken E et al. (2018), JCI Insight 3(19). -->
+<!-- - [Identification of Novel Protein Expression Changes Following Cisplatin Treatment and Application to Combination Therapy](https://www.ncbi.nlm.nih.gov/pubmed/28902521). Stark AL et al (2017). Journal of Proteome Research, 16(11): 4227-4236. -->
+<!-- - [Truncated DNMT3B isoform DNMT3B7 suppresses growth, induces differentiation, and alters DNA methylation in human neuroblastoma.](https://www.ncbi.nlm.nih.gov/pubmed/22815530). Ostler KR et al (2012). Cancer Research 72(18): 4714-23. -->
+
+
+<!-- Posters and Presentations -->
+<!-- -------------------------------------------------------------------------------- -->
+<!-- - [The role of PRDM1 in protection against radiogenic breast cancer.](https://github.com/gillsignals/science-docs/blob/master/prdm1_talk_140305.pptx) Oral presentation, Dept. Pediatric Hem/Onc, UChicago (2014). -->
+<!-- - The role of Blimp1 in protection against ionizing radiation in breast cells. Poster, Biomedical Sciences Retreat, UChicago (2014). -->
+<!-- - Systems analysis of cytarabine response and resistance in hematopoietic cells. Poster, Biomedical Sciences Retreat, UChicago (2013). -->
+<!-- ::: -->
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'teaching_positions')
+```
+
+
+
+Peer-reviewed Publications {data-icon=flask}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'publications')
+```
+
+
+
+```{r eval=FALSE}
+if(PDF_EXPORT){
+  cat("
+  
+Links {data-icon=link}
+--------------------------------------------------------------------------------
+
+<br>
+
+
+")
+  
+  walk2(links, 1:length(links), function(link, index){
+    print(glue('{index}. {link}'))
+  })
+}
+```
+
+
