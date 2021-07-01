@@ -2,6 +2,7 @@
 title: "Nana  Boateng's Resume"
 author: Nana Boateng
 date: "`r Sys.Date()`"
+knit: pagedown::chrome_print
 output:
   pagedown::html_resume:
   
@@ -34,8 +35,10 @@ Skills {#skills}
 Matlab, SAS,Octave.
 - <i class="fas fa-cloud"></i> **Cloud Computing**: AWS sagemaker, 
 Microsoft Azure, Google cloud, Databricks.
-- <i class="fa fa-laptop"></i> **Other**: Tensorflow/Keras, pyTorch,Scikit-learn,tidyverse, plotly, matplotlib, ggplot2,Stata, Minitab, 
-Tableau, Power BI, Github/Bitbucket, SPSS, Linux/Unix, Docker
+
+- <i class="fa fa-laptop"></i> **Other software tools**: Stata, Minitab, Tableau, Power BI, Github/Bitbucket, SPSS, Linux/Unix, Docker.
+
+- <i class="fa fa-laptop"></i> **Libraries**: PySpark, Sparklyr, Tensorflow/Keras, pyTorch,Scikit-learn,tidyverse, plotly,  ggplot2, tidymodels, H2O, Caret, Numpy, Matplotlib, Seaborn, Pandas, tidyverse,Spark ML, Elephas, Dist-Keras, Horovod.
 
 
 Credentials
@@ -95,6 +98,16 @@ Murfreesboro,TN
 2012
 
 Mathematics
+
+
+### Institute of Commercial Managers, United Kingdom
+Graduate Diploma
+
+Kumasi, Ghana
+
+2010
+
+Business Studies
 
 
 ### Kwame Nkrumah University of Science and Technology
@@ -181,16 +194,142 @@ Memphis, TN
 
 
 
+### St. Jude Children’s Research Hospital,
 
+Graduate Research Assistant
+
+Memphis, TN
+
+2014 - 2015
+
+- Gastronomy complications in pediatric cancer patients.
+- The effect of dynamic contrast: enhanced MRI(DEMRI) on tumor angiogenic activity and in predicting tumor response of OS2008 patients.
+- Evaluation of alternative in vivo screening methodology: Analysis of single mouse tumor response results from PPTP.
+- The significance of splenomegaly at diagnosis in pediatric Hodgkin lymphoma.
 
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
+### Georgia Gwinnett College
+
+Part -Time Faculty of Mathematics
+
+Lawrenceville, GA
+
+2020 - 2021
+
+- Instructor for mathematics and statistics.
+
+### Baptist College of Health Sciences
+
+Adjunct Instructor
+
+Memphis, TN
+
+2015 - 2016
+
+
+- Instructor for mathematics and statistics.
 
 
 
-Peer-reviewed Publications {data-icon=flask}
+### The University of Memphis
+
+Graduate Teaching Assistant
+
+Memphis, TN
+
+2012 - 2016
+
+
+- Taught Introduction to Statistics, Foundations of Math, and Elementary Calculus.
+
+### Middle Tennessee State University
+
+Graduate Teaching Assistant 
+
+Murfreesboro, TN
+
+2010 - 2012
+
+- Primary Instructor for College Algebra and Trigonometry
+
+
+
+
+Selected Peer-reviewed Publications {data-icon=flask}
 --------------------------------------------------------------------------------
+### Contextual Text Embeddings for Twi.
+
+Paul Azunre, Salomey Osei, Salomey Addo, Lawrence Asamoah Adu-Gyamfi, Stephen Moore, Bernard Adabankah, Bernard Opoku, Clara Asare-Nyarko, Samuel Nyarko, Cynthia Amoaba, Esther Dansoa Appiah, Felix Akwerh, Richard Nii Lante Lawson, Joel Budu, Emmanuel Debrah, **Nana Boateng**, Wisdom Ofori, Edwin Buabeng-Munkoh, Franklin Adjei, Isaac Kojo Essel Ampomah, Joseph Otoo, Reindorf Borkor, Standylove Birago Mensah, Lucien Mensah, Mark Amoako Marcel, Anokye Acheampong Amponsah, James Ben Hayfron-Acquah.
+
+
+Atlanta, GA
+
+ 2021
+
+### Multidisciplinary care and the use of treatment modalities for non–small cell lung cancer (NSCLC) in a large community healthcare setting
+M. Ray, N. Faris, F. Rugless, M. Smeltzer, C Foust, B. Jackson, **N. Boateng**
+International Journal of Radiation Oncology• Biology• Physics 98 (1), 226.
+
+Memphis, TN
+
+2017
+
+### Evaluation of Alternative In Vivo Drug Screening Methodology: single mouse analysis: A Retrospective Single-Institution Review, Cancer Research.
+
+Brendan Murphy, Han Yin, John Maris, E Kolb, Richard Gorlick, C. Patrick Reynolds, Min Kang, Stephen Keir, Raushan Kurmasheva, Igor Dvorchik, Jianrong Wu, Catherine Billups, **Nana Boateng**, Malcolm Smith, and Peter Houghton. 
+
+Memphis, TN
+
+ 2016.
+
+
+### Gastrostomy Complications in Pediatric Cancer Patients: A Retrospective Single-Institution Review, Pediatric Blood & Cancer 62(7):S184-S185.
+
+Fernandez Israel, John A. Sandoval, Reagan M. Jones, **Nana Boateng**, Jianrong Wu, Bhaskar N. Rao,. Andrew M. Davidoff, Stephen A. 
+
+
+Memphis, TN
+
+2015.
+
+
+### Numerical Partial Differential Solution of The Black-Scholes Equation, Lambert Academic.Publishing.
+
+**Nana Boateng**
+
+Memphis, TN
+
+2013
+
+
+
+
+Technical  Experience {data-icon=cogs}
+--------------------------------------------------------------------------------
+
+### Machine Learning and Statistical Techniques
+
+
+- Deep Learning and Distributed Deep Learning .
+- Bayesian Inference (A/B Testing), Causal Bayesian Networks.
+- Predictive Analytics and Time Series Modeling.
+- Survival Analysis.
+- Unsupervised learning: Clustering Algorithms, Dimensionality Reduction (PCA, t-SNE, UMAP).
+- Reinforcement learning.
+- Recommender systems and network analysis.
+- Non-parametric Regression and Methods.
+- Computational Modeling and Biostatistics in Gene Expression Data.
+- Sentiment Analysis (structured and unstructured data sets).
+- Sample Size Estimation and Power Analysis.
+- Analysis of Count Data.
+- Optimization techniques (linear / nonlinear programming, dynamic / stochastic programming).
+- Quantitative finance (Monte Carlo simulation, risk quantification, portfolio optimization, economic scenario generation).
+- Parallel, GPU and Cloud computing.
+- Spatial Analytics and Spatial Data Visualization.
+
+
 
 
 
